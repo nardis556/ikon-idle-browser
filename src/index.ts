@@ -1,4 +1,4 @@
-import * as idex from "@idexio/idex-sdk-ikon";
+import * as idex from "@idexio/idex-sdk";
 import { setTimeout } from "timers/promises";
 import { v1 as uuidv1 } from "uuid";
 import path from "path";
