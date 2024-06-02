@@ -8,7 +8,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
-// Retrieve necessary environment variables
 const walletAddress = process.env.WALLET_ADDRESS as string;
 const envConfigs: idex.RestAuthenticatedClientOptions = {
   baseURL: process.env.BASE_URL as string,
@@ -50,11 +49,13 @@ while (true) {
     await pubClient.getTrades({ market: "BTC-USD" });
 
     console.log(
-      `Loop ${loop} completed successfully at ${new Date().toISOString()}`
+      `${new Date()} Loop ${loop} completed successfully at ${new Date().toISOString()}`
     );
     loop++;
   } catch (e: any) {
-    console.error(`Error in loop ${loop}: ${e.response ? e.response.data : e}`);
+    console.error(
+      `${new Date()} Error in loop ${loop}: ${e.response ? e.response.data : e}`
+    );
   }
 
   await setTimeout(2000);
