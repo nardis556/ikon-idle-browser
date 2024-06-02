@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2020",                    // Node.js 16 supports ES2020 features
+    "module": "node16",                    // Use "node16" to leverage Node.js 16's support for ES modules
+    "lib": ["es2020"],                     // Include standard library files for ES2020
+    "outDir": "./dist",                    // Output directory for compiled files
+    "rootDir": "./src",                    // Root directory of source files
+    "strict": true,                        // Enable all strict type-checking options
+    // "moduleResolution": "node",            // Use Node.js style module resolution
+    "esModuleInterop": true,               // Allows default imports from modules with no default export
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in user-specified imports
+    "resolveJsonModule": true,             // Allow importing JSON files directly
+    "experimentalDecorators": true,        // Enable experimental support for decorators
+    "skipLibCheck": true                   // Skip type checking of declaration files
+  },
+  "include": [
+    "src/**/*"                             // Include all files in the src directory
+  ],
+  "exclude": [
+    "node_modules",                        // Exclude the node_modules directory
+    "**/*.spec.ts"                         // Exclude test files
+  ]
+}

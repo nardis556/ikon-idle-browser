@@ -1,7 +1,6 @@
 {
   "name": "ikon-idle-browser",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "@idexio/idex-sdk": "^4.0.0-beta.14",
-    "npx": "^10.2.2"
-  }
+    "ethers": "^6.9.0",
+    "npx": "^10.2.2",
+    "tsconfig": "^7.0.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/uuid": "^9.0.8",
+    "typescript": "^5.4.5"
+  },
+  "description": ""
 }
