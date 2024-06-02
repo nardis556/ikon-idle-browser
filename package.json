@@ -10,9 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "@idexio/idex-sdk": "^4.0.0-beta.14",
+    "dotenv": "^16.4.5",
     "ethers": "^6.9.0",
     "npx": "^10.2.2",
-    "tsconfig": "^7.0.0"
+    "path": "^0.12.7",
+    "tsconfig": "^7.0.0",
+    "url": "^0.11.3"
   },
   "type": "module",
   "devDependencies": {
